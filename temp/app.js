@@ -40,9 +40,7 @@ var scene = (function () {
     }
 
     function render() {
-        earth.rotation.x += 0.02;
-        earth.rotation.y += 0.02;
-        earth.rotation.z += 0.02;
+        earth.rotation.z += 0.0002;
 
         renderer.render(scene, camera);
         requestAnimationFrame(render);
